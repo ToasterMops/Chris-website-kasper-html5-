@@ -1,0 +1,340 @@
+
+/*    Default Layout: 992px. 
+    Gutters: 24px.
+    Outer margins: 48px.
+    Leftover space for scrollbars @1024px: 32px.
+-------------------------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8      9      10
+px      68    160    252    344    436    528    620    712    804    896    */
+
+@media (max-width: 767px) {
+
+
+
+}
+
+
+
+/*    Tablet Layout: 768px.
+    Gutters: 24px.
+    Outer margins: 28px.
+    Inherits styles from: Default Layout.
+-----------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8
+px      68    160    252    344    436    528    620    712    */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+#home {
+  #title {
+      top: 28%;
+      width: 92%;
+
+        h1{
+          font-size: 4.5em;
+          letter-spacing: 6px;
+        }
+        h2 {
+          font-size: 2.5em;
+          letter-spacing:4px;
+        }
+  }
+}
+
+#navigation {
+  .container {
+    width: 100%;
+  }
+}
+
+.navbar-brand {
+  img{
+    max-height: 66px;
+  }
+}
+
+.navigation .navbar-nav > li > a{
+  padding: 28px 12px;
+}
+
+.animated-nav .navigation .navbar-nav > li > a{
+  padding: 24px 12px;
+}
+
+#portfolio {
+    width: 100%;
+    margin: 0;
+}
+
+#service .media{
+  padding-left: 0;
+}
+
+.mobile-device .black{
+  left: 0px;
+}
+
+.mobile-device .white{
+  left: -98px;
+}
+
+figcaption.mask{
+  padding: 10px;
+}
+
+figcaption.mask h3{
+  font-size: 15px;
+}
+
+figcaption.mask span{
+  font-size: 12px;
+}
+
+.plus{
+    height: 60px;
+    width: 30%;
+    margin-left: -15%;
+}
+
+.portfolio-item:hover .plus{
+  top: 40%;
+}
+
+.fact-item{
+  padding-bottom: 30px;
+}
+
+.subtitle{
+  padding-top: 50px;
+}
+
+.pricing-table{
+  padding-bottom: 50px;
+}
+
+figure, p{
+  padding-top: 30px;
+}
+
+
+  
+ 
+}
+
+
+
+/*    Mobile Layout: 320px.
+    Gutters: 24px.
+    Outer margins: 34px.
+    Inherits styles from: Default Layout.
+---------------------------------------------
+cols    1     2      3
+px      68    160    252    */
+
+@media only screen and (max-width: 767px) {
+
+/*=================================
+    Landing Page
+===================================*/
+#home{
+  width: 100%;
+  height: 600px;
+
+    #title {
+      top: 35%;
+      width: 92%;
+      position: absolute;
+      padding: 20px 10px 40px 5%;
+
+
+        h1, h2 {
+          color: white;
+          text-shadow: $textshadow;
+        }
+        h1{
+          font-size: 2.2em;
+          font-weight: bold;
+          letter-spacing: 2px;
+        }
+        h2 {
+          padding-top: 0.6em;
+          font-size: 1.6em;
+          letter-spacing:1px;
+        }
+    }
+}
+
+.navbar-toggle {
+  border: 1px solid rgba(15, 116, 143, 0.8);
+  margin-top: 37px;
+}
+
+.navbar-toggle .icon-bar {
+  background-color: rgba(15, 116, 143, 0.8);
+}
+
+.animated-nav .navbar-toggle {
+  border: 1px solid #fff;
+  margin-top: 21px;
+}
+
+.animated-nav .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+
+.animated-nav .navigation .navbar-nav > li > a,
+.navigation .navbar-nav > li > a {
+  padding: 15px 25px;
+}
+
+.navigation .navbar-nav > li > a {
+  background-color: $dark-teal;
+}
+
+.navigation .navbar-nav > li > a:hover {
+  background-color: lighten($dark-teal, 30);
+}
+
+.navigation .navbar-nav > li.current > a {
+  border-bottom: 1px solid #fff;
+  color: #fff;
+}
+
+.section-title{
+  width: 100%;
+}
+/*=================================
+    Experience
+===================================*/
+#service .media{
+  padding-left: 0px;
+  padding-bottom: 25px;
+  padding-left: 10px;
+
+    img {
+      height: auto;
+      width: 100%;
+      float: clear;
+      padding: 0px 25% 15px 25%;
+      margin: 0;
+    }
+    .media-body p {
+      padding-top: 10px;
+    }
+}
+
+#service .media > .pull-left{
+  margin-right: 15px;
+}
+
+#service-bottom{
+  padding-bottom: 100%;
+}
+
+/*============================================================
+    Projects
+============================================================*/
+.personal-container {
+  padding-top: 40px;
+  padding-bottom: 20px;
+
+    img {
+      float: left;
+      max-height: 290px;
+    }
+}
+
+.service-features {
+  height: 220px;
+  padding: 20px 20px 0px 8%;
+  position: absolute;
+  right: 0;
+  top: 10%;
+  width: 80%;
+
+  h3 {
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+  ul {
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    li {
+      font-size: 12px;
+      letter-spacing: 1px;
+      line-height: 14px;
+    }
+  }
+   a {
+    padding: 4px 3px;
+    font-size: 12px;
+    display: inline-block;
+    margin-bottom: 4px;
+  }
+}
+
+.portfolio-item{
+  width: 100%;
+}
+
+.subtitle{
+  padding-top: 50px;
+}
+
+/*=================================
+    Quotes
+===================================*/
+
+#quotes {
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  .call-to-action p{
+    padding: 0;
+    font-size: 14px;
+  }
+}
+
+
+/*=================================
+    Other
+===================================*/
+figure, p{
+  padding-top: 30px;
+}
+
+
+
+
+
+}
+
+
+
+/*    Wide Mobile Layout: 480px.
+    Gutters: 24px.
+    Outer margins: 22px.
+    Inherits styles from: Default Layout, Mobile Layout.
+------------------------------------------------------------
+cols    1     2      3      4      5
+px      68    160    252    344    436    */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+
+}
+
+
+/*  Retina media query.
+  Overrides styles for devices with a 
+  device-pixel-ratio of 2+, such as iPhone 4.
+-----------------------------------------------    */
+
+@media 
+  only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min-device-pixel-ratio: 2) {
+  
+  
+  
+}
