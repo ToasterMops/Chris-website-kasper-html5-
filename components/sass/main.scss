@@ -20,7 +20,7 @@ $textshadow: 3px 3px 2px rgba(90,90,90,.6);
 /* =================================== */
 
 body {
-    background-color: #fff;
+    background-color: #121116;
     font-family: 'Open Sans', sans-serif;
     line-height: 1;
 	  font-size: 13px;
@@ -253,6 +253,7 @@ width: 11px;
 
 #home {
   overflow: hidden;
+  background-color: transparent;
   padding: 0;
   width: 100%;
   height: 1080px;
@@ -287,6 +288,10 @@ width: 11px;
         }
     }
 }
+
+// section {
+//   background-color: #121116;
+// }
 
 
 /*============================================================
@@ -747,12 +752,12 @@ figcaption.mask {
     margin-bottom: 30px;
 
     img {
-      max-height: 110px;
+      max-height: 100px;
     }
 }
 
-.footer-social {
-    margin-bottom: 85px;
+.footer-soc {
+    margin-bottom: 40px;
 
     ul li a {
       color: #fff;
@@ -762,7 +767,7 @@ figcaption.mask {
     }
 }
 
-.footer-social h3 {
+.footer-soc h3 {
     font-size: 20px;
     color: #fff;
     text-transform: uppercase;
@@ -775,18 +780,18 @@ figcaption.mask {
     }
 }
 
-.footer-social h3:after {
+.footer-soc h3:after {
   border-bottom: 1px solid #fff;
   bottom: 0;
   content: "";
   display: block;
   left: 50%;
-  margin-left: -115px;
+  margin-left: -150px;
   position: absolute;
-  width: 230px;
+  width: 300px;
 }
 
-.footer-social ul li a:hover {
+.footer-soc ul li a:hover {
   color: $teal;
 }
 
