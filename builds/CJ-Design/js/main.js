@@ -768,11 +768,11 @@ $("document").ready(function(){
         closeEffect : 'fade',
         closeSpeed  : 250,
         fitToView   : false,
-        width       : '90%',
-        height      : '100%',
+        width       : '80%',
+        height      : '90%',
         autoSize    : false,
         closeClick  : false,
-        scrolling  : false,
+        scrolling  : 'visible',
     });
 
     gallery_heights();
@@ -784,7 +784,7 @@ $("document").ready(function(){
     function gallery_heights() {
         var gallery_width = $("#gallery").width();
         $('#gallery .template-wrapper').css({'width':(gallery_width/3-3)+'px'});
-        $('#gallery img').css({'width':(gallery_width/3-3)+'px'});
+        $('#gallery .btn-img').css({'width':(gallery_width/3-3)+'px'});
     }
 
 /* ================== */

@@ -53,6 +53,7 @@
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
                     </button>
                     <!-- /responsive nav button -->
 
@@ -71,6 +72,7 @@
                         <ul id="nav" class="nav navbar-nav">
                             <li class="current"><a href="#home">Home</a></li>
                             <li><a href="#templates">Templates</a></li>
+                            <li><a href="#form">Order Form</a></li>
                         </ul>
                     </nav>
                     <!-- /main nav -->
@@ -133,22 +135,29 @@
 
                 <div class="template-wrapper">
                     <a class="fancybox-template" rel="gallery1" href="#professional">
-                        <img src="../img/professional.png" alt="" />
+                        <img src="../img/professional.png" class="btn-img" alt="" />
                     </a>
                     <h1>The Professional</h1>
-                    
                     <a class="btn btn-pdf" href="../img/professional.png">View Original</a>
+
                     <div id="professional" class="pop-ups" style="display: none;">
-                        <h2>Lorem ipsum dolor sit amet</h2>
+                        <h2>The Professional</h2>
+                        <p class="h2-sub">
+                            Clean, sharp and clean cut. The classy image on the side with a straight foward layout will be sure to catch an employer's eye.<br>
+                            This layout is designed to quickly show off the most important sections.<br>
+                            Show off your personality with a sleak side bar that also doubles as a contact section.
+                        </p>
+                        <h4>Samples of my previous work</h4>
+                        <img src="../img/professional.png" alt="" />
                         <p>
-                            <img src="../img/professional.png" alt="" />
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae malesuada nulla. Praesent eget sem eget nisi laoreet tempus. Mauris pellentesque nibh justo, eget fringilla justo auctor in. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam eget metus justo. Nullam dictum tincidunt porttitor. Nam fermentum tellus a placerat venenatis. Aenean hendrerit eros eu erat vulputate varius. In sollicitudin ut velit sed egestas. Aliquam vitae erat euismod, ultricies mi et, finibus arcu. Aliquam a tortor iaculis, pharetra neque sit amet, pretium purus. Aenean non erat ac augue venenatis facilisis vitae nec purus.<br><br>
+                            Etiam ac felis dolor. Nullam pretium dui sit amet sem auctor rutrum. Duis a elementum urna. Proin sed tortor nulla. Proin scelerisque dignissim nisi, eget pretium enim ornare quis. Proin pulvinar tempor accumsan. Sed a lacus suscipit, vestibulum dui vitae, condimentum ligula. Cras eget massa diam. Fusce suscipit augue nulla, id accumsan ipsum ultricies ullamcorper.
                         </p>
                     </div>
                 </div>
                 <div class="template-wrapper">
                     <a class="fancybox-template" rel="gallery1" href="#minimalist">
-                        <img src="../img/minimalist.png" alt="" />
+                        <img src="../img/minimalist.png" class="btn-img" alt="" />
                     </a>
                     <h1>The Minimalist</h1>
 
@@ -163,7 +172,7 @@
                 </div>
                 <div class="template-wrapper">
                     <a class="fancybox-template" rel="gallery1" href="#billboard">
-                        <img src="../img/billboard.png" alt="" />
+                        <img src="../img/billboard.png" class="btn-img" alt="" />
                     </a>
                     <h1>The Billboard</h1>
                     
@@ -182,6 +191,59 @@
         </section>
         <!--
         End #Portfolio
+        ========================== -->
+
+        <!--
+        #quotes
+        ========================== -->
+        <section id="quotes">
+            <div class="container">
+                <div class="row wow zoomIn">
+                    <div class="col-lg-12">
+                        <div class="call-to-action text-center">
+                            <p>“I'm bored' is a useless thing to say. You live in a great, big, vast world that you've seen none percent of.”</p>
+                            <span>Louis C. K.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--
+        End #quotes
+        ========================== -->
+
+        <!--
+        #contact
+        ========================== -->
+        <section id="form">
+            <div class="container">
+                <div class="row">
+
+                    <div class="section-title text-center wow flipInX">
+                        <h2>Contact Me</h2>
+                        <p>If you like what you see or just want to chat, send me a message!<br>
+                        ChristopherJiang@Outlook.com</p>
+                    </div>
+                    
+                        <div class="contact-form clearfix">
+                            <form method="post" id="email-form">
+                                <div class="input-field">
+                                    <input type="text" class="form-control" name="Name: " placeholder="Your Name" required="">
+                                </div>
+                                <div class="input-field">
+                                    <input type="email" class="form-control" name="Email: " placeholder="Your Email" required="">
+                                </div>
+                                <div class="input-field message">
+                                    <textarea name="message" class="form-control" placeholder="Your Message" required=""></textarea>
+                                </div>
+                                <a class="btn pull-right" id="msg-submit">SEND MESSAGE</a>
+                            </form>
+                        </div> <!-- end .contact-form -->
+                </div>
+            </div>
+        </section>
+        <!--
+        End #contact
         ========================== -->
    
     </body>

@@ -66,17 +66,16 @@
     }
     .btn-pdf {
       width: 50%;
-      padding: 10px;
+      padding: 5px;
       background-color: darken($teal, 20);
       border: solid 2px $dark-bg;
-      color: $dark-bg;
       font-weight: 600;
+      color: white;
 
       &:hover{
         @include transition(all .2s ease-in 0s);
         background-color: $dark-bg;
         border: solid 2px darken($teal, 20);
-        color: white;
       }
     }
     h1 {
@@ -85,13 +84,76 @@
       font-size: 30px;
     }
     img {
-      padding: 5%;
+    padding: 5%;
     }
 }
+.fancybox-template {
+  -webkit-transition: .2s ease-in;
+  transition: .2s ease-in;
 
+  &:hover {
+    opacity: 0.7;
+  }
+}
 .pop-ups {
   padding: 5vh 10vh;
   background-color: $dark-bg;
-  text-align: center;
+    
+    h2 {
+      font-size: 42px;
+      color: $teal;
+    }
+    img {
+      height: 50vh;
+    }
+    h4 {
+      padding: 3vh 0;
+      font-size: 28px;
+      color: $teal;
+    }
+    p {
+      padding: 3vh 0;
+      font-size: 18px;
+      line-height: 28px;
+    }
+
+    .h2-sub {
+      padding: 2vh 0;
+    }
+    
 }
 
+/*=================================
+    Contacts
+===================================*/
+
+.contact-form .input-field {
+  margin-bottom: 30px;
+}
+
+.contact-form .form-control {
+  border: 1px solid #dbdbdb;
+  padding: 20px;
+  border-radius: 0;
+  height: 58px;
+  box-shadow: none;
+}
+
+.contact-form .message .form-control {
+  height: 198px;
+}
+
+.contact-form .form-control::-moz-placeholder {
+  color: #1f2021;
+}
+
+.contact-form #msg-submit {
+  font-size: 16px;
+  padding: 12px 30px;
+  color: $dark-teal;
+
+  &:hover {
+    background-color: $dark-teal;
+    color: white;
+  }
+}
