@@ -1,0 +1,23 @@
+/* =================================== */
+/*  Sass Variables 
+/* =================================== */
+$teal: rgb(101,191,180);
+$dark-teal: rgb(70,133,125);
+$dark-grey: rgb(80,80,80);
+$dark-bg: rgb(25,25,25);
+$light-text: rgb(210,210,210);
+
+$textshadow: 3px 3px 2px rgba(90,90,90,.6);
+
+@mixin transition($args) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+%content-desktop {
+	width: 80%;
+	margin: auto;
+}

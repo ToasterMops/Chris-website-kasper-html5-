@@ -1,0 +1,232 @@
+/* =================================== */
+/*	Basic Style 
+/* =================================== */
+
+body {
+    background-color: $dark-bg;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1;
+	  font-size: 13px;
+    color: $light-text;
+}
+
+ol, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+figure, p {
+    margin: 0;
+}
+
+a {
+    @include transition(all .4s ease-in 0s);
+
+    &:hover, &:focus {
+      @include transition(all .4s ease-in 0s);
+      text-decoration: none;
+      outline: 0;
+      color: inherit;
+    }
+}
+
+iframe {
+    border: 0;
+}
+
+h1, h2, h3,
+h4, h5, h6 {
+    font-family: 'Open Sans', sans-serif;
+	font-weight: normal;
+	margin: 0;
+}
+
+.clear:before,
+.clear:after {
+    content: " ";
+    display: table;
+}
+ 
+.clear:after {
+   clear: both;
+}
+ 
+.clear {
+   *zoom: 1;
+}
+
+body > section {
+    padding: 100px 0;
+}
+
+.section-title {
+  margin: 0 auto 85px;
+  width: 420px;
+}
+
+.section-title h2 {
+  // color: darken($teal, 40);
+  color: $teal;
+  font-size: 36px;
+  position: relative;
+  margin-bottom: 25px;
+  padding-bottom: 27px;
+  text-transform: uppercase;
+}
+
+.section-title h2:before {
+  border-bottom: 1px solid #fff;
+  bottom: 0;
+  content: "";
+  left: 50%;
+  margin-left: -50px;
+  position: absolute;
+  width: 100px;
+}
+
+.section-title h2:after {
+background: none repeat scroll 0 0 #fff;
+border: 1px solid #1F2021;
+border-radius: 25px;
+bottom: -6px;
+content: "";
+height: 11px;
+left: 50%;
+margin-left: -5.5px;
+position: absolute;
+width: 11px;
+}
+
+.section-title p {
+    line-height: 25px;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.btn {
+    border-radius: 0;
+}
+
+.btn:hover,
+.btn:focus {
+    outline: 0;
+}
+
+.btn-blue {
+  background-color: $dark-teal;
+  color: #fff;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 10px 35px;
+}
+
+.kill-margin {
+    margin: 0 !important;
+}
+
+/*************************
+*******Navigation******
+**************************/
+
+#navigation,
+.navbar-brand,
+.navbar-toggle,
+.navbar-nav > li > a,
+.search-form > #search-sub {
+  @include transition(all .4s ease-in 0s);
+}
+
+.animated-nav .navbar-brand {
+  padding: 5px 0;
+
+  img{
+    max-height: 56px;
+  }
+}
+
+.animated-nav .navigation .navbar-nav > li > a {
+  padding: 23px 25px;
+}
+
+#navigation {
+  border-bottom: 1px solid darken($teal,20);
+  .container {
+    width: 80%;
+  }
+}
+
+.animated-nav#navigation {
+  border-bottom: none;
+}
+
+.navbar-brand {
+  height: inherit;
+  padding: 5px 0;
+
+  img{
+    max-height: 56px;
+  }
+}
+
+.navbar-brand a {
+  display: block;
+}
+
+.navigation .navbar-nav > li > a {
+  color: #fff;
+  text-shadow: $textshadow;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 25px 25px;
+  text-transform: uppercase;
+}
+
+.navigation .navbar-nav > li.current > a {
+  color: darken($teal,20);
+  border-bottom: 3px solid darken($teal,20);
+}
+
+.navigation .navbar-nav > li > a:focus,
+.navigation .navbar-nav > li > a:hover {
+  background-color: transparent;
+}
+
+.animated-nav .navigation .navbar-nav > li.current > a {
+  color: #fff;
+  border-bottom: 3px solid #fff;
+}
+
+
+
+.search-form {
+  position: relative;
+}
+
+.search-form > #search {
+  width: 100%;
+}
+
+.search-form > #search {
+  background-color: transparent;
+  height: 40px;
+    border: 0 ;
+  margin-top: 28px;
+  width: 100%;
+}
+
+.search-form > #search-sub {
+  background: url("../img/icons/search.png") no-repeat scroll 0 0 transparent;
+  border: 0 ;
+  bottom: 11px;
+  height: 15px;
+  position: absolute;
+  right: 8px;
+  padding: 0;
+  text-indent: -9999em;
+  width: 15px;
+}
+
+.animated-nav .search-form > #search-sub {
+    bottom: 22px;
+}

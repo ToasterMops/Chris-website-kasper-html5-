@@ -1,16 +1,8 @@
-/* ========================================================================= */
-/*  Preloader Script
-/* ========================================================================= */
-
-/*window.onload = function () {
-    document.getElementById('loading-mask').style.display = 'none';
-}*/
-
 $("document").ready(function(){
-    /* ========================================================================= */
-    /*  Menu item highlighting
-    /* ========================================================================= */
 
+/* ====================== */
+/*  Text rotating settings
+/* ====================== */
 
     $(".rotate").textrotator({
         animation: "dissolve",
@@ -18,9 +10,13 @@ $("document").ready(function(){
         speed: 3000
     });
 
+/* ====================== */
+/*  Menu item highlighting
+/* ====================== */
+
     jQuery(window).scroll(function () {
         if (jQuery(window).scrollTop() > 300) {
-            jQuery("#navigation").css("background-color","#46857D");
+            jQuery("#navigation").css("background-color","#38867d");
             jQuery("#navigation").addClass("animated-nav");
         } else {
             jQuery("#navigation").css("background-color","transparent");
@@ -55,9 +51,9 @@ $("document").ready(function(){
         },
     });
 
-/* ========================================================================= */
-/*  On scroll fade/bounce fffect
-/* ========================================================================= */
+/* ================== */
+/*  On scroll fade/bounce effect
+/* ================== */
 
     $("#testimonial").owlCarousel({
         pagination : true, // Show bullet pagination
@@ -67,9 +63,9 @@ $("document").ready(function(){
         navigation: true,
     });
 
-    /* ========================================================================= */
-    /*  Mailto Fuctionality
-    /* ========================================================================= */
+/* ================== */
+/*  Email form functionality
+/* ================== */
 
     $('#msg-submit').click(function(){
     var inputs = $('#email-form input');
@@ -90,9 +86,9 @@ $("document").ready(function(){
 
 });
 
-/* ========================================================================= */
-/*  On scroll fade/bounce fffect
-/* ========================================================================= */
+/* ================== */
+/*  Starting Wow effects
+/* ================== */
 
     wow = new WOW({
         animateClass: 'animated',

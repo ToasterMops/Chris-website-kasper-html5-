@@ -1,252 +1,3 @@
-/* =================================== */
-/*  Sass Variables 
-/* =================================== */
-$teal: rgb(101,191,180);
-$dark-teal: rgb(70,133,125);
-$dark-grey: rgb(80,80,80);
-
-$textshadow: 3px 3px 2px rgba(90,90,90,.6);
-
-@mixin transition($args) {
-  -webkit-transition: $args;
-  -moz-transition: $args;
-  -ms-transition: $args;
-  -o-transition: $args;
-  transition: $args;
-}
-
-/* =================================== */
-/*	Basic Style 
-/* =================================== */
-
-body {
-    background-color: #121116;
-    font-family: 'Open Sans', sans-serif;
-    line-height: 1;
-	  font-size: 13px;
-    color: #a8a8a8;
-}
-
-ol, ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-figure, p {
-    margin: 0;
-}
-
-a {
-    @include transition(all .4s ease-in 0s);
-
-    &:hover, &:focus {
-      @include transition(all .4s ease-in 0s);
-      text-decoration: none;
-      outline: 0;
-      color: inherit;
-    }
-}
-
-iframe {
-    border: 0;
-}
-
-h1, h2, h3,
-h4, h5, h6 {
-    font-family: 'Open Sans', sans-serif;
-	font-weight: normal;
-	margin: 0;
-}
-
-.clear:before,
-.clear:after {
-    content: " ";
-    display: table;
-}
- 
-.clear:after {
-   clear: both;
-}
- 
-.clear {
-   *zoom: 1;
-}
-
-body > section {
-    padding: 100px 0;
-}
-
-.section-title {
-  margin: 0 auto 85px;
-  width: 420px;
-}
-
-.section-title h2 {
-  color: darken($teal, 40);
-  font-size: 36px;
-  position: relative;
-  margin-bottom: 25px;
-  padding-bottom: 27px;
-  text-transform: uppercase;
-}
-
-.section-title h2:before {
-  border-bottom: 1px solid #1f2021;
-  bottom: 0;
-  content: "";
-  left: 50%;
-  margin-left: -50px;
-  position: absolute;
-  width: 100px;
-}
-
-.section-title h2:after {
-background: none repeat scroll 0 0 #fff;
-border: 1px solid #1F2021;
-border-radius: 25px;
-bottom: -6px;
-content: "";
-height: 11px;
-left: 50%;
-margin-left: -5.5px;
-position: absolute;
-width: 11px;
-}
-
-.section-title p {
-    line-height: 25px;
-    font-weight: 300;
-    font-size: 18px;
-}
-
-.btn {
-    border-radius: 0;
-}
-
-.btn:hover,
-.btn:focus {
-    outline: 0;
-}
-
-.btn-blue {
-  background-color: $dark-teal;
-  color: #fff;
-  font-size: 16px;
-  line-height: 24px;
-  padding: 10px 35px;
-}
-
-.kill-margin {
-    margin: 0 !important;
-}
-
-/*************************
-*******Navigation******
-**************************/
-
-#navigation,
-.navbar-brand,
-.navbar-toggle,
-.navbar-nav > li > a,
-.search-form > #search-sub {
-  @include transition(all .4s ease-in 0s);
-}
-
-.animated-nav .navbar-brand {
-  padding: 5px 0;
-
-  img{
-    max-height: 56px;
-  }
-}
-
-.animated-nav .navigation .navbar-nav > li > a {
-  padding: 23px 25px;
-}
-
-#navigation {
-  border-bottom: 1px solid $dark-teal;
-  .container {
-    width: 80%;
-  }
-}
-
-.animated-nav#navigation {
-  border-bottom: none;
-}
-
-.navbar-brand {
-  height: inherit;
-  padding: 5px 0;
-
-  img{
-    max-height: 56px;
-  }
-}
-
-.navbar-brand a {
-  display: block;
-}
-
-.navigation .navbar-nav > li > a {
-  color: #fff;
-  text-shadow: $textshadow;
-  font-size: 18px;
-  font-weight: 600;
-  padding: 25px 25px;
-  text-transform: uppercase;
-}
-
-.navigation .navbar-nav > li.current > a {
-  color: $dark-teal;
-  border-bottom: 3px solid $dark-teal;
-}
-
-.navigation .navbar-nav > li > a:focus,
-.navigation .navbar-nav > li > a:hover {
-  background-color: transparent;
-}
-
-.animated-nav .navigation .navbar-nav > li.current > a {
-  color: #fff;
-  border-bottom: 3px solid #fff;
-}
-
-
-
-.search-form {
-  position: relative;
-}
-
-.search-form > #search {
-  width: 100%;
-}
-
-.search-form > #search {
-  background-color: transparent;
-  height: 40px;
-    border: 0 ;
-  margin-top: 28px;
-  width: 100%;
-}
-
-.search-form > #search-sub {
-  background: url("../img/icons/search.png") no-repeat scroll 0 0 transparent;
-  border: 0 ;
-  bottom: 11px;
-  height: 15px;
-  position: absolute;
-  right: 8px;
-  padding: 0;
-  text-indent: -9999em;
-  width: 15px;
-}
-
-.animated-nav .search-form > #search-sub {
-    bottom: 22px;
-}
-
 /*************************
 *******Landing Page******
 **************************/
@@ -269,7 +20,7 @@ width: 11px;
       width: 78%;
       position: absolute;
       padding: 50px 30px 80px 12%;
-      background-color: rgba($dark-teal, .85);
+      background-color: rgba(darken($teal, 20), .85);
 
 
         h1, h2 {
@@ -312,7 +63,7 @@ width: 11px;
 }
 
 .project-filter ul li a {
-  color: #000;
+  color: $light-text;
   display: block;
   line-height: 18px;
   padding: 10px 20px;
@@ -345,7 +96,7 @@ width: 11px;
 }
 
 .plus {
-  background: url("../img/icons/plus.png") no-repeat scroll center center $teal;
+  background: url("../img/icons/plus.png") no-repeat scroll center center $dark-bg;
   border-radius: 50%;
   display: block;
   height: 80px;
@@ -359,7 +110,7 @@ width: 11px;
 }
 
 figcaption.mask {
-  background-color: #fff;
+  background-color: $dark-bg;
   bottom: -101px;
   left: 0;
   padding: 30px;
@@ -369,15 +120,15 @@ figcaption.mask {
     
   @include transition(all 0.4s ease-out);
 
-            span {
-              font-size: 14px;
-              color: $teal;
-            }
-            h3 {
-              color: #1f2021;
-              font-size: 20px;
-              line-height: 28px;
-            }
+  h3 {
+    color: $light-text;
+    font-size: 20px;
+    line-height: 28px;
+  }
+  span {
+    font-size: 14px;
+    color: $teal;
+  }
 
 }
 
@@ -408,8 +159,8 @@ figcaption.mask {
 }
 
 #service .media .media-body p{
-    color: darken($dark-teal, 30);
-    font-size: 13px;
+    color: $light-text;
+    font-size: 14px;
     line-height: 24px;
 }
 
@@ -469,14 +220,16 @@ figcaption.mask {
 }
 
 .subtitle h3 {
-  color: #1f2021;
+  color: $teal;
   margin-bottom: 16px;
+  font-size: 26px;
   text-transform: uppercase;
 }
 
 .subtitle p {
   line-height: 25px;
   margin-bottom: 30px;
+  font-size: 18px;
 }
 
 .tst-single {
@@ -502,7 +255,7 @@ figcaption.mask {
 
   h4 {
     letter-spacing: 5px;
-    color: lighten(black, 20);
+    color: $light-text;
   }
   h5 {
     letter-spacing: 3px;
@@ -511,7 +264,7 @@ figcaption.mask {
   p {
     padding-top: 12px;
     padding-bottom: 20px;
-    color: #1f2021;
+    color: $light-text;
     line-height: 25px;
   }
   span {
@@ -533,9 +286,9 @@ figcaption.mask {
 }
 
 .owl-controls .owl-page span {
-  background-color: #fff;
+  background-color: $dark-bg;
   border-radius: 20px;
-  border: 1px solid #ACACAC;
+  border: 1px solid $teal;
   display: block;
   height: 12px;
   margin: 5px 4px;
@@ -556,10 +309,8 @@ figcaption.mask {
     margin: 10px 5px 0 5px;;
     padding: 10px 20px;
     display: inline-block;
-    border: 2px solid white;
-    background-color: white;
-    color: $dark-grey;
-    border-radius: 8px;
+    background-color: $dark-bg;
+    color: $light-text;
     text-transform: uppercase;
 
     &:hover {
@@ -589,7 +340,7 @@ figcaption.mask {
 .personal-container {
   padding-top: 40px;
   padding-bottom: 20px;
-  border-bottom: 1px solid lighten($teal, 15);
+  // border-bottom: 1px solid lighten($teal, 15);
   position: relative;
 
     img {
@@ -648,7 +399,8 @@ figcaption.mask {
 ===================================*/
 
 #quotes {
-    background-color: darken($dark-teal, 20);
+    // background-color: darken($dark-teal, 20);
+    background-color: darken($teal, 20);
     padding: 50px 0;
 }
 
@@ -744,8 +496,8 @@ figcaption.mask {
 ============================================================*/
 
 #footer {
-    background-color: #121116;
-    padding: 115px 0 35px;
+    background-color: darken($teal, 20);
+    padding: 50px 0 0px;
 }
 
 .footer-logo {

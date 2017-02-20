@@ -1,10 +1,11 @@
 /* import assets */
-@import 'compass';
 @import 'font-awesome.min.scss';
 @import 'bootstrap.min.scss';
 @import 'jquery.fancybox.scss';
 @import 'owl.carousel.scss';
 @import 'animate.scss';
 /* import css */
+@import 'variables.scss';
+@import 'template-navbar.scss';
 @import 'main.scss';
 @import 'responsive.scss';
