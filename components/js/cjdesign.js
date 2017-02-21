@@ -48,10 +48,17 @@ $("document").ready(function(){
         closeSpeed  : 250,
         fitToView   : false,
         width       : '80%',
-        height      : '90%',
+        height      : '100%',
         autoSize    : false,
         closeClick  : false,
         scrolling  : 'visible',
+        helpers : {
+            overlay : {
+                css : {
+                    'background' : 'rgba(0,0,0,.85)'
+                }
+            }
+        }
     });
 
     gallery_heights();
