@@ -805,6 +805,28 @@ $("document").ready(function(){
         singleItem: true,
         navigation: true,
     });
+
+/* ================== */
+/*  Email form functionality
+/* ================== */
+
+    $('#msg-submit').click(function(){
+    var inputs = $('#email-form input');
+    var comments = $('#email-form textarea');
+    var bodyStr = "";
+
+    inputs.each(function(index, value){
+        if (value.name != "Subject: ")
+            bodyStr += value.name + value.value + "%0A" + "%0A"
+    });
+
+    if (comments[0].value != ""){
+        bodyStr += "%0A" + comments[0].value;
+    };
+
+    window.location = "mailto:ChristopherJiang@outlook.com?subject=" + inputs[1].value + "&body=" + bodyStr;
+
+});
 });
 
 /* ================== */

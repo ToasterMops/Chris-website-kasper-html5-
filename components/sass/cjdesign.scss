@@ -69,7 +69,6 @@
       padding: 5px;
       background-color: darken($teal, 20);
       border: solid 2px $dark-bg;
-      font-weight: 600;
       color: white;
 
       &:hover{
@@ -104,7 +103,7 @@
       color: $teal;
     }
     img {
-      height: 50vh;
+      width: 90%;
     }
     h4 {
       padding: 3vh 0;
@@ -150,10 +149,13 @@
 .contact-form #msg-submit {
   font-size: 16px;
   padding: 12px 30px;
-  color: $dark-teal;
+  background-color: darken($teal, 20);
+  border: solid 2px $dark-bg;
+  color: white;
 
   &:hover {
-    background-color: $dark-teal;
-    color: white;
+    @include transition(all .2s ease-in 0s);
+    background-color: $dark-bg;
+    border: solid 2px darken($teal, 20);
   }
 }
