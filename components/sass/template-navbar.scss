@@ -8,6 +8,7 @@ body {
     line-height: 1;
 	  font-size: 13px;
     color: $light-text;
+    overflow-x: hidden;
 }
 
 ol, ul {
@@ -151,12 +152,9 @@ width: 11px;
 
 #navigation {
   border-bottom: 1px solid darken($teal,20);
-  .container {
-    width: 80%;
-  }
 }
 
-.animated-nav#navigation {
+.animated-nav #navigation {
   border-bottom: none;
 }
 
