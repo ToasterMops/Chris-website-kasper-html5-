@@ -790,8 +790,13 @@ $("document").ready(function(){
 
     function gallery_heights() {
         var gallery_width = $("#gallery").width();
-        $('#gallery .template-wrapper').css({'width':(gallery_width/3-3)+'px'});
-        $('#gallery .btn-img').css({'width':(gallery_width/3-3)+'px'});
+        if (gallery_width > 483 ){
+            $('#gallery .template-wrapper').css({'width':(gallery_width/3-3)+'px'});
+            $('#gallery .btn-img').css({'width':(gallery_width/3-3)+'px'});
+        } else {
+            $('#gallery .template-wrapper').css({'width':(gallery_width-3)+'px'});
+            $('#gallery .btn-img').css({'width':(gallery_width-3)+'px'});
+        }
     }
 
 /* ================== */

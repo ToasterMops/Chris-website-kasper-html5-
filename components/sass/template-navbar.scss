@@ -133,35 +133,13 @@ width: 11px;
 #navigation,
 .navbar-brand,
 .navbar-toggle,
-.navbar-nav > li > a,
-.search-form > #search-sub {
+.navbar-nav > li > a{
   @include transition(all .4s ease-in 0s);
-}
-
-.animated-nav .navbar-brand {
-  padding: 5px 0;
-
-  img{
-    max-height: 56px;
-  }
-}
-
-.animated-nav .navigation .navbar-nav > li > a {
-  padding: 23px 25px;
-}
-
-#navigation {
-  border-bottom: 1px solid darken($teal,20);
-}
-
-.animated-nav #navigation {
-  border-bottom: none;
 }
 
 .navbar-brand {
   height: inherit;
-  padding: 5px 0;
-
+  padding: 8px 0;
   img{
     max-height: 56px;
   }
@@ -193,38 +171,4 @@ width: 11px;
 .animated-nav .navigation .navbar-nav > li.current > a {
   color: #fff;
   border-bottom: 3px solid #fff;
-}
-
-
-
-.search-form {
-  position: relative;
-}
-
-.search-form > #search {
-  width: 100%;
-}
-
-.search-form > #search {
-  background-color: transparent;
-  height: 40px;
-    border: 0 ;
-  margin-top: 28px;
-  width: 100%;
-}
-
-.search-form > #search-sub {
-  background: url("../img/icons/search.png") no-repeat scroll 0 0 transparent;
-  border: 0 ;
-  bottom: 11px;
-  height: 15px;
-  position: absolute;
-  right: 8px;
-  padding: 0;
-  text-indent: -9999em;
-  width: 15px;
-}
-
-.animated-nav .search-form > #search-sub {
-    bottom: 22px;
 }
