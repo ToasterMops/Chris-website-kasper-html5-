@@ -61,17 +61,8 @@
       text-align: center;
     }
     .btn-pdf {
+      @extend .btn-dark;
       width: 50%;
-      padding: 5px;
-      background-color: darken($teal, 20);
-      border: solid 2px $dark-bg;
-      color: white;
-
-      &:hover{
-        @include transition(all .2s ease-in 0s);
-        background-color: $dark-bg;
-        border: solid 2px darken($teal, 20);
-      }
     }
     h1 {
       padding-bottom: 2.5vh;
@@ -159,15 +150,6 @@
 }
 
 .contact-form #msg-submit {
-  font-size: 16px;
-  padding: 12px 30px;
-  background-color: darken($teal, 20);
-  border: solid 2px $dark-bg;
-  color: white;
-
-  &:hover {
-    @include transition(all .2s ease-in 0s);
-    background-color: $dark-bg;
-    border: solid 2px darken($teal, 20);
-  }
+  @extend .btn-dark;
+  padding: 10px 20px;
 }

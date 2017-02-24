@@ -122,6 +122,19 @@ width: 11px;
   padding: 10px 35px;
 }
 
+.btn-dark {
+  padding: 5px;
+  background-color: darken($teal, 20);
+  border: solid 2px $dark-bg;
+  color: white;
+  @include transition(all .2s ease-in 0s);
+
+  &:hover{
+    background-color: $dark-bg;
+    border: solid 2px darken($teal, 20);
+  }
+}
+
 .kill-margin {
     margin: 0 !important;
 }
