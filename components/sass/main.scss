@@ -59,13 +59,15 @@
 }
 
 .project-filter ul li {
-  padding: 0;
+  margin: 15px 0;
 }
 
 .project-filter ul li a {
   @extend .btn-dark;
-  line-height: 18px;
   padding: 10px 20px;
+  line-height: 18px;
+  width: 100%;
+  height: 100%;
   text-transform: uppercase;
 
   &.active {

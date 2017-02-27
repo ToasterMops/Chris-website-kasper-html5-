@@ -237,42 +237,22 @@ px      68    160    252    */
     Projects
 ============================================================*/
 .personal-container {
-  padding-top: 40px;
-  padding-bottom: 20px;
-
-    img {
-      float: left;
-      max-height: 290px;
-    }
+  height: 40vh;
 }
 
 .service-features {
-  height: 220px;
-  padding: 20px 20px 0px 8%;
-  position: absolute;
-  right: 0;
-  top: 10%;
-  width: 80%;
+  padding: 5vh 10vw;
 
   h3 {
-    font-size: 20px;
+    font-size: 24px;
     letter-spacing: 1px;
   }
   ul {
-    padding-top: 10px;
-    padding-bottom: 10px;
-
     li {
-      font-size: 12px;
+      font-size: 14px;
       letter-spacing: 1px;
-      line-height: 14px;
+      line-height: 18px;
     }
-  }
-   a {
-    padding: 4px 3px;
-    font-size: 12px;
-    display: inline-block;
-    margin-bottom: 4px;
   }
 }
 
