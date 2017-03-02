@@ -106,7 +106,22 @@ figure, p{
   padding-top: 30px;
 }
 
-
+.pop-ups {
+  padding: 5vh 5vh;
+    
+    h2 {
+      font-size: 30px;
+    }
+    img {
+      padding-right: 2vw;
+      height: 80px;
+    }
+    p {
+      padding: 3vh 0;
+      font-size: 12px;
+      line-height: 18px;
+    }
+}
   
  
 }
@@ -200,6 +215,26 @@ px      68    160    252    */
 
 .section-title{
   width: 100%;
+}
+
+.pop-ups {
+  padding: 5vw;
+    
+    h2 {
+      font-size: 24px;
+      text-align: center;
+    }
+    img {
+      padding: 0;
+      margin-bottom: 2vh;
+      width: 60%;
+      height: auto;
+    }
+    p {
+      padding: 3vh 0;
+      font-size: 12px;
+      line-height: 14px;
+    }
 }
 /*=================================
     Experience

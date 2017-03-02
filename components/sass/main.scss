@@ -140,6 +140,25 @@ figcaption.mask {
     top: 30%;
 }
 
+.pop-ups {
+  padding: 5vh 10vh;
+  background-color: $dark-bg;
+    
+    h2 {
+      font-size: 42px;
+      color: $teal;
+    }
+    img {
+      padding-right: 2vw;
+      height: 100px;
+    }
+    p {
+      padding: 3vh 0;
+      font-size: 18px;
+      line-height: 28px;
+    }
+}
+
 /*============================================================
     Experience
 ============================================================*/
