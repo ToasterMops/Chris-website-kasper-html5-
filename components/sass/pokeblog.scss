@@ -1,0 +1,89 @@
+
+#home {
+	padding: 0;
+}
+#cover {
+	background-size: cover;
+	padding: 0;
+	width: 100%;
+	margin-top: 80px;
+	height: 880px;
+}
+
+#title {
+	text-align: center;
+	font-size: 42px;
+	color: white;
+	padding: 0;
+}
+
+section {
+	width: 70%;
+	margin-left: 15%;
+	font-size: 16px;
+	padding-top: 0px;
+	img {
+		width: 60%;
+		margin-left: 20%;
+		padding: 16px 0;
+	}
+	h1,h2 {
+		color: $teal;
+	}
+	h1 {
+		padding-bottom: 36px;
+	}
+	h2 {
+		font-size: 24px;
+		padding-bottom: 24px;
+	}
+	p {
+		padding-bottom: 16px;
+	}
+	ol {
+		padding-bottom: 16px;
+
+		li {
+			padding-bottom: 10px;
+		}
+	}
+	.link-btn {
+		@extend .btn-dark;
+		text-align: center;
+		display: inline-block;
+		width: 20%;
+		margin-left: 5%;
+		margin-bottom: 16px;
+		box-sizing: inline-block;
+	    border: solid 2px darken($teal, 20);
+	    padding: 16px 20px;
+	}
+}
+
+.paragraph {
+	padding-top: 0;
+	padding-bottom: 50px;
+}
+
+/*=================================
+    Quotes
+===================================*/
+
+#quotes {
+    // background-color: darken($dark-teal, 20);
+    background-color: darken($teal, 20);
+    padding: 50px 0;
+    width: 100%;
+    margin: 0;
+}
+
+.call-to-action {
+    color: #fff;
+    font-weight: 600;
+}
+
+.call-to-action p {
+    font-size: 25px;
+    line-height: 35px;
+    margin-bottom: 15px;
+}
